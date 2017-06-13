@@ -1,0 +1,304 @@
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	header{
+		width: 1000px;
+		margin: 15px auto;
+	}
+	header #logo{
+		float: left;
+	}
+	header div.search_bar{
+		position: relative;
+		float: left;
+	}	
+	header div.search_bar input{
+		font-size: 17px;
+		padding-left: 7px;
+		border: 2px solid #E9E9E9;
+		width: 400px;
+		height: 30px;
+		margin-left: 180px;		
+	}
+	header div.search_bar img{
+		position: absolute;
+		top: 6px;
+		right: 6px;
+	}
+	header #banner_right{
+		width: 60px;
+		float: right;
+		background: url(../images/cart.jpg) no-repeat;
+		padding-left: 50px;
+	}
+	header #banner_right h1{
+		color: gray;
+		font-size: 25px; 
+		float: left;
+		line-height: 45px;
+	}
+	nav{
+		background-color: #3bc3b6;
+		padding: 10px 0px; 
+	}
+		nav ul{
+			width: 1000px;
+			margin: 0px auto;
+			list-style-type: none;
+		}
+		nav ul li{
+			float: left;
+			color: white;
+			font-size: 18px;
+		}
+		nav ul li a{
+			font-family: "Arial Narrow", sans-serif; 
+			font-weight: bold;
+			color: white;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 0px 11px;
+		}
+		nav ul li a:hover{
+			color: #1e90ff;
+			/*text-decoration: underline;*/
+		}
+	div.middle{
+		height: 450px;
+		background: #2da89b;
+	}
+	div.middle .main{
+		background: url(../images/banner_shirt.png) no-repeat 0px 55px;
+		width: 800px;
+		height: 325px;
+		margin: 0 auto;
+		padding-top: 60px;
+	}
+	div.content{
+		padding-left: 362px; 
+	}
+		div.content h1{
+			font-family: "Arial Narrow", sans-serif;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			color: white;
+			font-size: 50px;
+		}
+		div.content p{
+			font-size: 18px;
+			line-height: 30px;
+			margin-bottom: 15px;
+			color: white;
+		}
+		div.content a{
+			text-decoration: none;
+		}
+		div.circle{
+			background-color: white;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			float: left;
+			margin-right: 17px;
+		}
+		div#light_green{
+			background-color: #7FD6CD;
+		}
+	a.shop_button{
+		display: block;
+		font-family: "Arial Narrow", sans-serif;
+		font-size: 22px;
+		height: 45px;
+		width: 150px;
+		color: white;
+		text-align: center;
+		font-weight: bold;
+		border: 3px solid white;
+		border-radius: 10px;
+		line-height: 45px;
+		margin-bottom: 50px;
+	}
+	a.shop_button:hover{
+		background-color: #3bc3b6;
+	}
+	div.products{
+		width: 1000px;
+		margin: 0px auto;
+	}
+	.common{
+		text-align: center;
+		line-height: 36px;
+		color: #AAAAAA;
+		font-size: 20px;
+		font-family: "Arial Narrow", sans-serif;
+		padding-top: 150px;
+	}
+	.product_box{
+		font-weight: bold;
+		width: 330px;
+		height: 200px;
+		float: left;
+	}
+	div.product_left{
+		background: url(../images/shoes.jpg) no-repeat center left;
+		border-right: 2px solid #E9E9E9;
+	}
+	div.product_middle{
+		background: url(../images/white_t.jpg) no-repeat center left;
+		border-right: 2px solid #E9E9E9;
+	}
+	div.product_right{
+		background: url(../images/pant.jpg) no-repeat center left;
+	}
+	div.product_middle a{
+		height: 200px;
+		width: 200px;
+		float: left;
+	}
+	div.products h3{
+		font-family: "Arial Narrow", sans-serif;
+		margin-left: 200px;
+		padding-top: 60px;
+		color: #AAA;
+	}
+	div.shop{
+		margin-top: 20px;
+		margin-left: 200px;
+		font-family: "Arial Narrow", sans-serif;
+		font-size: 15px;
+		height: 30px;
+		width: 60px;
+		text-align: center;
+		font-weight: bold;
+		border-radius: 5px;
+		line-height: 30px;
+	}
+	div.shop a{
+		background-color: #3BC395;
+		border-radius: 5px;
+		height: 30px;
+		width: 60px;
+		display: block;
+		color: white;
+		text-decoration: none;
+	}
+	.featured_products{
+		background-color: #2da89b;
+	}
+	.featured_products h2{
+		width: 900px;
+		margin: 0px auto;
+		clear: both;
+		padding: 10px 0px;
+		color: white;
+		font-family: "Arial Narrow", sans-serif;
+	}
+	div.bottom_products{
+		width: 900px;
+		margin: 0px auto;
+	}
+	div.bottom_products .clothing{
+		width: 270px;
+		height: 250px;
+		border: 1px solid #E9E9E9;
+		border-bottom: 5px solid #3BC395;
+	}
+	div.bottom_products #top_left{
+		background: url(../images/product_1.jpg) no-repeat 35px 20px; 
+		margin: 30px 42px 30px 0px;
+		float: left;
+	}
+	div.bottom_products #top_middle{
+		background: url(../images/product_2.jpg) no-repeat 35px 20px;
+		margin: 30px 0px 30px;
+		float: left;
+	}
+	div.bottom_products #top_right{
+		background: url(../images/product_3.jpg) no-repeat 35px 20px;
+		margin: 30px 0px 30px 0px; 
+		float: right;
+	}
+	div.bottom_products #bottom_left{
+		background: url(../images/product_4.jpg) no-repeat 35px 20px;
+		margin: 0px 42px 50px 0px;
+		float: left;
+	}
+	div.bottom_products #bottom_middle{
+		background: url(../images/product_5.jpg) no-repeat 35px 20px;
+		float: left;
+	}
+	div.bottom_products #bottom_right{
+		background: url(../images/product_6.jpg) no-repeat 35px 20px;
+		float: right; 
+	}
+	#top_left_wrap{
+		position: relative;
+	}
+	#top_left_wrap  a{
+		position: absolute;
+	}
+	.buy{
+		font-weight: bold;
+		font-size: 15px;
+		padding: 5px 5px;
+		font-family: "Arial Narrow", sans-serif;
+		width: 68px;
+		color: white;
+		background-color: #3BC395;
+		border-radius: 4px;
+		text-align: center;
+	}
+	.buy:hover{
+		background-color: skyblue;
+	}
+	div.bottom_products a{
+		text-decoration: none;
+	}
+	.bottom{
+		background-color: #3bc3b6;
+	}
+	div.bottom #bottom_nav{
+		width: 900px;
+		margin: 0px auto;
+	}
+	div.bottom .bottomLists{
+		font-size: 17px;
+		color: white;
+		list-style-type: none;
+		float: left;
+		margin: 0px 87px 30px 0px;
+	}
+	div.bottom .bottomLists h2{
+		font-family: "Arial Narrow", sans-serif;
+		margin: 40px 0px 30px 0px;
+	}
+	div.bottom .bottomLists li{
+		padding: 0px 0px 10px 7px;
+	} 
+	div.bottom .bottomLists li a{
+		text-decoration: none;
+		color: white;
+	}
+	div.bottom .bottomLists a:hover{
+		color: #1e90ff;
+		text-decoration: underline;
+	}
+	#bottom_nav ul:nth-child(3){
+		margin-right: 0px;
+	}
+	#bottom_nav ul:nth-child(4){
+		margin-right: 0px;
+		float: right;
+	}
+	footer{
+		clear: both;
+		background-color: #2da89b;
+		text-align: center;
+		padding: 15px 0px;
+		color: white;
+	}
+
+	.clear{
+		clear: both;
+	}
