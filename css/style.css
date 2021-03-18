@@ -1,49 +1,67 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    /* outline: 1px solid; */
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1em;
 }
 
 header {
-    width: 1000px;
-    margin: 15px auto;
+    margin: 15px 0px;
 }
 
-header #logo {
-    float: left;
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header div.search_bar {
+.logo img {
+    width: 110%;
+}
+
+.search_bar {
     position: relative;
-    float: left;
 }
 
-header div.search_bar input {
+.search_bar input {
     font-size: 17px;
-    padding-left: 7px;
+    padding: 0px 30px 0px 10px; 
     border: 2px solid #E9E9E9;
     width: 400px;
-    height: 30px;
-    margin-left: 180px;
+    height: 35px;
 }
 
-header div.search_bar img {
+.search_bar img {
     position: absolute;
     top: 6px;
-    right: 6px;
+    right: 10px;
 }
 
-header #banner_right {
-    width: 60px;
-    float: right;
-    background: url(../images/cart.jpg) no-repeat;
-    padding-left: 50px;
+.cart {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
-header #banner_right h1 {
+.cart img {
+    display: block;
+}
+
+.cart span {
     color: gray;
-    font-size: 25px;
-    float: left;
-    line-height: 45px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 0.5em;
 }
 
 nav {
@@ -52,28 +70,27 @@ nav {
 }
 
 nav ul {
-    width: 1000px;
-    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
     list-style-type: none;
+    color: white;
 }
 
 nav ul li {
-    float: left;
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
-nav ul li a {
-    font-family: "Arial Narrow", sans-serif;
+nav ul a {
     font-weight: bold;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0px 11px;
+    /* padding: 0px 11px; */
 }
 
-nav ul li a:hover {
-    color: #1e90ff;
+nav ul a:hover {
+    opacity: 0.5;
     /*text-decoration: underline;*/
 }
 
