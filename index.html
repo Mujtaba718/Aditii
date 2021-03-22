@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">	
 	<title>Aditii</title>
 </head>
@@ -20,9 +20,14 @@
 			<a href="#"><img src="images/search.jpg" alt="magnifying glass"></a>
 		</div>
 		<a href="#" class="cart">
-			<img src="images/cart.jpg" alt="">
+			<img src="images/cart.jpg" alt="">		
 			<span>$300</span>
 		</a>
+		<div class="menu_btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 	</div>
 </header>
 
@@ -34,7 +39,7 @@
 			<li><a href="#">Handbag</a></li>|
 			<li><a href="#">Wallets</a></li>|
 			<li><a href="#">Accessories</a></li>|
-			<li><a href="#">Mens Store</a></li>|
+			<li><a href="#">Men's Store</a></li>|
 			<li><a href="#">Shoes</a></li>|
 			<li><a href="#">Vintage</a></li>|
 			<li><a href="#">Services</a></li>|
@@ -45,36 +50,45 @@
 
 <div class="middle">
 	<div class="main">
+		<img class="banner_img" src="images/banner_shirt.PNG" alt="">
 		<div class="content">
 			<h1>cowhide standard crew</h1>
-			<p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of 
+			<p>White coloured, short-sleeved, printed t-shirt for men by Levi's. This crew-neck t-shirt is made of 
 			organic cotton and comes in regular fit.</p>
 			<a href="#" class="shop_button">SHOP NOW</a>
-			<div class="circle"></div>
+			<!-- <div class="circle"></div>
 			<div class="circle"></div>
 			<div class="circle"></div>
 			<div class="circle" id="light_green"></div>
-			<div class="circle"></div>
+			<div class="circle"></div> -->
 		</div>
 	</div>
-	<div class="clear"></div>
-</div>
+-</div>
 
 <div class="products">
 
-	<div class="product_left product_box" >	
-		<h3>BRANDED SHOES</h3>
-		<div class="shop"><a href="#">SHOP</a></div>
+	<div class="product_box">	
+		<img src="images/shoes.jpg" alt="">
+		<div class="product_desc">
+			<h3 class="product_title">BRANDED SHOES</h3>
+			<div class="shop"><a href="#">SHOP</a></div>
+		</div>
 	</div>
 
-	<div class="product_middle product_box" >
-		<h3>BRANDED T-SHIRTS</h3>
-		<div class="shop"><a href="#">SHOP</a></div>
+	<div class="product_box">
+		<img src="images/white_t.jpg" alt="">
+		<div class="product_desc">
+			<h3 class="product_title">BRANDED T-SHIRTS</h3>
+			<div class="shop"><a href="#">SHOP</a></div>
+		</div>
 	</div>
 
-	<div class="product_right product_box" >
-		<h3>BRANDED SHORTS</h3>
-		<div class="shop"><a href="#">SHOP</a></div>
+	<div class="product_box">
+		<img src="images/pant.jpg" alt="">
+		<div class="product_desc">
+			<h3 class="product_title">BRANDED SHORTS</h3>
+			<div class="shop"><a href="#">SHOP</a></div>
+		</div>
 	</div>
 
 	<div class="clear"></div>
@@ -83,35 +97,54 @@
 <div class="featured_products"><h2>FEATURED PRODUCTS</h2></div>
 
 <div class="bottom_products">
+	
 	<div id="top_left" class="clothing">
-		<h3 class="common">BRANDED SHOE</br>
-		$300 <a href="#" class="buy">BUY NOW</a>	
+		<img src="images/product_1.jpg" alt="">
+		<h3 class="common">BRANDED SHOE</h3>
+		<div class="product_price">
+			<span class="price">$300</span> <a href="#" class="buy_btn">BUY NOW</a>
+		</div>
 	</div>
 	
 
 	<div id="top_middle" class="clothing">
-		<h3 class="common">BRANDED TEES </br>
-		$300 <a href="#" class="buy">BUY NOW</a></h3>	
+		<img src="images/product_2.jpg" alt="">
+		<h3 class="common">BRANDED TEES</h3>
+		<div class="product_price">
+			<span class="price">$300</span> <a href="#" class="buy_btn">BUY NOW</a>
+		</div>	
 	</div>
 
 	<div id="top_right" class="clothing">
-		<h3 class="common">PLAIN TEES</br>
-		$300 <a href="#" class="buy">BUY NOW</a></h3>
+		<img src="images/product_3.jpg" alt="">
+		<h3 class="common">PLAIN TEES</h3>
+		<div class="product_price">
+			<span class="price">$300</span> <a href="#" class="buy_btn">BUY NOW</a>
+		</div>
 	</div>
 
 	<div id="bottom_left" class="clothing">
-		<h3 class="common">BRANDED PURSE</br>
-		$300 <a href="#" class="buy">BUY NOW</a></h3>
+		<img src="images/product_4.jpg" alt="">
+		<h3 class="common">BRANDED PURSE</h3>
+		<div class="product_price">
+			<span class="price">$300</span> <a href="#" class="buy_btn">BUY NOW</a>
+		</div>
 	</div>
 
 	<div id="bottom_middle" class="clothing">
-		<h3 class="common">EMS WOMEN HANDBAG</br>
-		$300 <a href="#" class="buy">BUY NOW</a></h3>
+		<img src="images/product_5.jpg" alt="">
+		<h3 class="common">EMS WOMEN HANDBAG</h3>
+		<div class="product_price">
+			<span class="price">$300</span> <a href="#" class="buy_btn">BUY NOW</a>
+		</div>
 	</div>
 
 	<div id="bottom_right" class="clothing">
-		<h3 class="common">BRANDED CARGOS</br>
-		$300 <a href="#" class="buy">BUY NOW</a></h3>
+		<img src="images/product_6.jpg" alt="">
+		<h3 class="common">BRANDED CARGOS</h3>
+		<div class="product_price">
+			<span class="price">$300</span> <a href="#" class="buy_btn">BUY NOW</a>
+		</div>
 	</div>
 
 	<div class="clear"></div>
@@ -167,8 +200,10 @@
 </div>
 
 <footer>
-	Copyright &#169; 2015 Mujtaba Iqbal
+	Copyright &#169; 2021 Mujtaba Iqbal
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
