@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Arial Narrow", sans-serif;
+    font: 16px "Arial Narrow", sans-serif;
 }
 
 .container {
@@ -35,7 +35,7 @@ header .container {
 }
 
 .search_bar input {
-    font-size: 17px;
+    font-size: 1rem;
     padding: 0px 30px 0px 10px; 
     border: 2px solid #E9E9E9;
     width: 400px;
@@ -74,7 +74,7 @@ header .container {
     justify-content: space-evenly;
     top: 0;
     left: 1em;
-    transform: translateY(50%);
+    transform: translateY(25%);
     cursor: pointer;
 }
 
@@ -94,6 +94,7 @@ nav ul {
     justify-content: space-around;
     list-style-type: none;
     color: white;
+    transition: transform 0.3s ease-out;
 }
 
 nav ul li {
@@ -114,20 +115,21 @@ nav ul a:hover {
     /*text-decoration: underline;*/
 }
 
+.open_menu {
+    transform: translateX(0);
+}
+
+
 .middle {
     min-height: 450px;
     background: #2da89b;
 }
 
 .middle .main {
-    /* background: url(../images/banner_shirt.PNG) no-repeat 0px 55px; */
     display: flex;
     justify-content: center;
-    /* width: 800px; */
     margin: 0 auto;
-    /* height: 325px; */
     padding-top: 60px;
-    /* background-color: red; */
     overflow: hidden;
 }
 
@@ -143,11 +145,11 @@ nav ul a:hover {
     margin-bottom: 10px;
     text-transform: uppercase;
     color: white;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 .content p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 30px;
     margin-bottom: 15px;
     color: white;
@@ -172,17 +174,12 @@ nav ul a:hover {
 
 .shop_button {
     display: inline-block;
-    /* font-family: "Arial Narrow", sans-serif; */
     font-size: 1.125rem;
     padding: 10px 24px;   
-    /* height: 45px;
-    width: 150px; */
     color: white;
-    /* text-align: center; */
     font-weight: bold;
     border: 3px solid white;
     border-radius: 8px;
-    /* line-height: 45px; */
     margin-bottom: 50px;
     transition: background-color 0.3s ease-out;
 }
@@ -191,19 +188,16 @@ nav ul a:hover {
     background-color: #3bc3b6;
 }
 
-div.products {
+.products {
     display: flex;
     max-width: 1000px;
+    flex-wrap: wrap;
     margin: 0px auto;
 }
 
 .common {
-    /* text-align: center; */
-    /* line-height: 36px; */
     color: #AAAAAA;
-    font-size: 20px;
-    /* font-family: "Arial Narrow", sans-serif; */
-    /* padding-top: 150px; */
+    font-size: 1.25rem;
 }
 
 .product_box {
@@ -211,10 +205,6 @@ div.products {
     flex: 1;
     font-weight: bold;
     padding: 1em 0;
-    /* justify-content: center;
-    align-items: center; */
-    /* height: 200px; */
-    /* float: left; */
 }
 
 .product_box + .product_box {
@@ -236,7 +226,7 @@ div.shop {
     /* margin-top: 20px;
     margin-left: 200px; */
     font-family: "Arial Narrow", sans-serif;
-    font-size: 15px;
+    font-size: 0.875rem;
     height: 30px;
     width: 60px;
     text-align: center;
@@ -260,7 +250,7 @@ div.shop a {
 }
 
 .featured_products h2 {
-    width: 900px;
+    max-width: 900px;
     margin: 0px auto;
     clear: both;
     padding: 10px 0px;
@@ -271,11 +261,12 @@ div.shop a {
 .bottom_products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-template-rows: repeat(2, 250px);
+    /* grid-template-rows: repeat(2, 250px); */
+    grid-auto-rows: 250px;
     grid-gap: 40px;
     max-width: 932px;
     padding: 0 1em;
-    margin: 2.8125em auto 0;
+    margin: 2.8125em auto;
 }
 
 .bottom_products .clothing {
@@ -317,49 +308,42 @@ div.shop a {
     text-decoration: none;
 }
 
-.bottom {
+.bottom_nav {
     background-color: #3bc3b6;
-}
-
-div.bottom #bottom_nav {
-    width: 900px;
-    margin: 0px auto;
-}
-
-div.bottom .bottomLists {
-    font-size: 17px;
     color: white;
+    padding-bottom: 40px;
+}
+
+.bottom_nav_container {
+    max-width: 900px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom_list {
+    font-size: 1rem;
     list-style-type: none;
-    float: left;
-    margin: 0px 87px 30px 0px;
 }
 
-div.bottom .bottomLists h2 {
+.brand_nav h2 {
     font-family: "Arial Narrow", sans-serif;
-    margin: 40px 0px 30px 0px;
+    /* margin: 40px 0px 30px 0px; */
+    margin: 40px 0px 30px;
 }
 
-div.bottom .bottomLists li {
+.bottom_list li {
     padding: 0px 0px 10px 7px;
 }
 
-div.bottom .bottomLists li a {
+.bottom_list li a {
     text-decoration: none;
     color: white;
 }
 
-div.bottom .bottomLists a:hover {
+.bottom_list a:hover {
     color: #1e90ff;
     text-decoration: underline;
-}
-
-#bottom_nav ul:nth-child(3) {
-    margin-right: 0px;
-}
-
-#bottom_nav ul:nth-child(4) {
-    margin-right: 0px;
-    float: right;
 }
 
 footer {
@@ -370,58 +354,103 @@ footer {
     color: white;
 }
 
-.clear {
-    clear: both;
-}
-
 @media all and (max-width: 760px) {
-    body {
-        /* background-color: red; */
+    html {
+        font-size: 14px;
     }
-
+    
     header .container {
         flex-direction: column;
         align-items: stretch;
-        max-width: 600px;
     }
-
+    
     .logo { 
         align-self: center;
         margin-bottom: 0.5em;
-        transform: translateX(-30px);
+        transform: translateX(-15px);
     }
-
+    
     .logo img {
-        width: auto;
+        width: 75%;
     }
-
+    
     .search_bar input {
         width: 100%;
     }
-
+    
     .cart {
         position: absolute;
         right: 1em;
     }
 
+    .cart img {
+        width: 36px;
+    }
+    
     .menu_btn {
         display: flex;
     }
+    
+    .open span,
+    .menu_btn span {
+        transition: all 0.3s ease-out;
+    }
+    
+    .open span:first-child {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .open span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .open span:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    nav {
+        position: relative;
+        padding: 0px;
+    }
+    
+    nav .container {
+        padding: 0px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 100px);
+        transform: translateX(-100%);
+        background-color: #3bc3b6;
+    }
+    
+    nav span {
+        display: none;
+    }
+    
+    nav li {
+        padding-left: 1em;
+    }
+    
+    .banner_img {
+        align-self: flex-start;
+    }
 
-        .open span,
-        .menu_btn span {
-            transition: all 0.3s ease-out;
-        }
+    .content {
+        margin-left: 50px;
+    }
 
-        .open span:first-child {
-            transform: translateY(6px) rotate(45deg);
-        }
-        
-        .open span:nth-child(2) {
-            opacity: 0;
-        }
-        
-        .open span:last-child {
-            transform: translateY(-7px) rotate(-45deg);
-        }
+    .bottom_nav_container {
+        /* flex-wrap: wrap;   */
+        flex-direction: column;
+    }
+
+    .brand_nav {
+        /* flex-basis: 100%; */
+        margin-left: 100px;
+    }
+
 }
